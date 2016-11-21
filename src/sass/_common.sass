@@ -1,0 +1,44 @@
+
++font("exo2-regular", exo2-regular)
++font("pfdindisplaypro-black", pfdindisplaypro-black)
++font("pfdindisplaypro-bold", pfdindisplaypro-bold)
++font("pfdindisplaypro-light", pfdindisplaypro-light)
++font("pfdindisplaypro-med", pfdindisplaypro-med)
++font("pfdindisplaypro-reg", pfdindisplaypro-reg)
+=exo
+    font-family: "exo2-regular", Arial, sans-serif
+=pblack
+    font-family: "pfdindisplaypro-black", Arial, sans-serif
+=pbold
+    font-family: "pfdindisplaypro-bold", Arial, sans-serif
+=plight
+    font-family: "pfdindisplaypro-light", Arial, sans-serif
+=pmed
+    font-family: "pfdindisplaypro-med", Arial, sans-serif
+=preg
+    font-family: "pfdindisplaypro-reg", Arial, sans-serif
+
+
+.out
+    background: #FFF
+    font-size: 16px
+    line-height: 1.4
+    +plight
+.h2
+    text-align: center
+    display: inline-block
+    font-size: 32px
+
+    +pmed
+    font-weight: normal
+    border-bottom: solid 4px #fea000
+.h3
+    display: inline-block
+    font-size: 24px
+    +pbold
+    border-bottom: solid 4px #ff8a00
+    text-transform: uppercase
+.h4
+    @extend .h3
+    color: black
+    font-size: 22px

@@ -1,0 +1,60 @@
+{% set menu = [
+  {
+    link: 'index.html',
+    name: 'О компании'
+  },
+  {
+    link: '#',
+    name: 'Услуги'
+  },
+  {
+    link: '#',
+    name: 'Акции'
+  },
+  {
+    link: '#',
+    name: 'Цены'
+  },
+  {
+    link: '#',
+    name: 'Новости'
+  },
+  {
+    link: 'contacts.html',
+    name: 'Контакты'
+  }
+  ] %}
+
+<header class="header">
+    <div class="container">
+        <div class="header-line">
+            <div class="logo-container">
+                <a href="/"><div class="logo"></div></a>
+            </div>
+            <div class="phone">
+                <i class="icon-disp"></i>
+                <div class="phone__number">
+                    <span>(383)</span>
+                    299-31-99
+                </div>
+            </div>
+            <div class="cabinet">
+                <i class="icon-person"></i>
+                <a href="#" class="cabinet__link">Личный кабинет</a>
+            </div>
+        </div>
+        <nav class="header-menu">
+          {{mixins.menuHeader(menu, 1)}}
+          
+            <!-- <ul class="menu">
+                <li><a class="active" href="index.html">О компании</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul> -->
+        </nav>
+        <button class="btn-burger js-btn-burger"></button>
+    </div>
+</header>

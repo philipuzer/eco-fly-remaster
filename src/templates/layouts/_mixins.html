@@ -1,0 +1,24 @@
+{% macro icon(i) %}
+<svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
+{% endmacro %}
+
+
+{% macro slide(arr) %}
+{% for i in arr %}
+<div class="main-slider__slide" style="background-image: url({{i.img}})">
+	<div class="container">
+		<div class="banner__inner">
+			<a href="#"><h2 class="banner__title">{{i.title}}</h2></a>
+			<h3 class="banner__sub-title">{{i.subTitle}}</h3>
+		</div>
+	</div>
+</div>
+{% endfor %}
+{% endmacro %}
+{% macro menuHeader(menu, act) %}
+<ul class="menu">
+	{% for i in menu %}
+		<li><a {% if loop.index == act %} class="active" {% endif %} href="{{i.link}}">{{i.name}}</a></li>
+		{% endfor %}
+</ul>
+{% endmacro %}

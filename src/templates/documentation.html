@@ -1,0 +1,55 @@
+---
+calcBg: 'img/calcBg1.png'
+---
+{% extends "layouts/_layout.html" %}
+{% block content %}
+
+<div class="menu-doc">
+	<div class="container">
+		<ul class="menu-about">
+			<li class="menu-about__item"><a href="#"><i class="icon icon-car"></i><span>О нас</span></a></li>
+			<li class="menu-about__item"><a href="#"><i class="icon icon-cars"></i><span>Техника</span></a></li>
+			<li class="menu-about__item"><a class="is-active" href="#"><i class="icon icon-doc"></i><span>Документация</span></a></li>
+			<li class="menu-about__item"><a href="#"><i class="icon icon-coment"></i><span>Отзывы</span></a></li>
+		</ul>
+	</div>
+
+
+</div>
+	<div class="documentation">
+		<div class="container">
+			<div class="documentation__box">
+				<h2 class="documentation__title">Лицензии полигонов</h2>
+				<ul class="documentation__list">
+					<li class="documentation__item">
+						<div class="documentation__diplom" style="background-image: url('img/dip1.png')"></div>
+					</li>
+					<li class="documentation__item">
+						<div class="documentation__diplom" style="background-image: url('img/dip2.png')"></div>
+					</li>
+					<li class="documentation__item">
+						<div class="documentation__diplom" style="background-image: url('img/dip3.png')"></div>
+					</li>
+					<li class="documentation__item">
+						<div class="documentation__diplom" style="background-image: url('img/dip4.png')"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="documentation__box">
+				<h2 class="documentation__title">Учредительные документы</h2>
+				<ul class="documentation__list">
+					<li class="documentation__item">
+						<div class="documentation__doc" style="background-image:url('img/doc1.png')"></div>
+					</li>
+					<li class="documentation__item">
+						<div class="documentation__doc" style="background-image:url('img/doc2.png')"></div>
+					</li>
+					<li class="documentation__item">
+						<div class="documentation__doc" style="background-image:url('img/doc3.png')"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	{% include "partials/_calc.html" %}
+{% endblock %}

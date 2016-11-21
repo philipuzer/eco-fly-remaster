@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+
+  </head>
+
+  <body>
+
+    <!-- BEGIN content -->
+    <div class="out">
+
+      <header class="header">
+        <div class="container">
+          <div class="header-line">
+            <div class="logo-container">
+              <a href="/">
+                <div class="logo"></div>
+              </a>
+            </div>
+            <div class="phone">
+              <i class="icon-disp"></i>
+              <div class="phone__number">
+                <span>(383)</span> 299-31-99
+              </div>
+            </div>
+            <div class="cabinet">
+              <i class="icon-person"></i>
+              <a href="#" class="cabinet__link">Личный кабинет</a>
+            </div>
+          </div>
+          <nav class="header-menu">
+
+            <ul class="menu">
+
+              <li><a class="active" href="index.html">О компании</a></li>
+
+              <li><a href="#">Услуги</a></li>
+
+              <li><a href="#">Акции</a></li>
+
+              <li><a href="#">Цены</a></li>
+
+              <li><a href="#">Новости</a></li>
+
+              <li><a href="contacts.html">Контакты</a></li>
+
+            </ul>
+
+            <!-- <ul class="menu">
+                <li><a class="active" href="index.html">О компании</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul> -->
+          </nav>
+          <button class="btn-burger js-btn-burger"></button>
+        </div>
+      </header>
+
+      <div class="menu-doc">
+        <div class="container">
+          <ul class="menu-about">
+            <li class="menu-about__item"><a href="#"><i class="icon icon-car"></i><span>О нас</span></a></li>
+            <li class="menu-about__item"><a href="#"><i class="icon icon-cars"></i><span>Техника</span></a></li>
+            <li class="menu-about__item"><a class="is-active" href="#"><i class="icon icon-doc"></i><span>Документация</span></a></li>
+            <li class="menu-about__item"><a href="#"><i class="icon icon-coment"></i><span>Отзывы</span></a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="documentation">
+        <div class="container">
+          <div class="documentation__box">
+            <h2 class="documentation__title">Лицензии полигонов</h2>
+            <ul class="documentation__list">
+              <li class="documentation__item">
+                <div class="documentation__diplom" style="background-image: url('img/dip1.png')"></div>
+              </li>
+              <li class="documentation__item">
+                <div class="documentation__diplom" style="background-image: url('img/dip2.png')"></div>
+              </li>
+              <li class="documentation__item">
+                <div class="documentation__diplom" style="background-image: url('img/dip3.png')"></div>
+              </li>
+              <li class="documentation__item">
+                <div class="documentation__diplom" style="background-image: url('img/dip4.png')"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="documentation__box">
+            <h2 class="documentation__title">Учредительные документы</h2>
+            <ul class="documentation__list">
+              <li class="documentation__item">
+                <div class="documentation__doc" style="background-image:url('img/doc1.png')"></div>
+              </li>
+              <li class="documentation__item">
+                <div class="documentation__doc" style="background-image:url('img/doc2.png')"></div>
+              </li>
+              <li class="documentation__item">
+                <div class="documentation__doc" style="background-image:url('img/doc3.png')"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="calculate" style="background-image: url('img/calcBg1.png');" id="calc">
+        <div class="container">
+          <form action="" class="form-calc">
+            <h4 class="form-calc__title">Калькулятор расчета
+              <span>стоимости вывоза мусора</span></h4>
+
+            <div class="select-title">
+              <p>Выберите тип вывозимого мусора</p>
+            </div>
+
+            <div class="select-box">
+              <select class="select select_garbadge">
+					<option class="form__option" value=""> Вывоз бытового мусора ТКО </option>
+					<option class="form__option" value="">  Вывоз бытового мусора ТКО 2</option>
+					<option class="form__option" value="">  Вывоз бытового мусора ТКО 3</option>
+					<option class="form__option" value=""> Вывоз бытового мусора ТКО 4</option>
+
+				</select>
+              <a href="" class="select-button"></a>
+            </div>
+            <div class="select-title">
+              <p>Выберите тип услуги</p>
+            </div>
+            <div class="select-box">
+              <select class="select">
+					<option class="form__option" value="">Вывозим мусор однократно </option>
+					<option class="form__option" value="">Вывозим мусор многократно</option>
+					<option class="form__option" value="">Вывозим мусор однократно</option>
+					<option class="form__option" value="">Вывозим мусор многократно</option>
+				</select>
+              <a href="" class="select-button"></a>
+            </div>
+            <div class="select-title">
+              <p>Выберите объем контейнера и количество</p>
+            </div>
+            <div class="form-calc__box">
+              <div class="form-calc__container left">
+                <div class="select-title select-title_small">
+                  <p>Oбъем контейнера</p>
+                </div>
+                <div class="select-box select-box_small">
+                  <select class="select select_ltl">
+							<option class="form__option" value="">1.1 м3 </option>
+							<option class="form__option" value="">1.2 м3</option>
+							<option class="form__option" value="">1.2 м3</option>
+							<option class="form__option" value="">1.2 м3</option>
+						</select>
+                  <a href="" class="select-button"></a>
+                </div>
+              </div>
+              <div class="form-calc__container right">
+                <div class="select-title select-title_small">
+                  <p>количество контейнеров</p>
+                </div>
+                <div class="number-container js-number-container">
+                  <button class="minus js-minus"> </button>
+                  <input class="number-container__text js-number-container-value" type="text" value="1">
+                  <button class="plus js-plus"> </button>
+                </div>
+              </div>
+            </div>
+            <div class="select-title">
+              <p>Выберите район</p>
+            </div>
+            <div class="select-box">
+              <select class="select  select_region">
+					<option class="form__option" value="">В черте города </option>
+					<option class="form__option" value="">район 1</option>
+					<option class="form__option" value="">район 2</option>
+					<option class="form__option" value="">За городом</option>
+				</select>
+              <a href="" class="select-button"></a>
+            </div>
+            <div class="form-calc__box">
+              <div class="select-title">
+                <p>Приблизительная стоимость</p>
+              </div>
+              <div class="price left">
+                <p class="price__value">2520</p>
+                руб в месяц
+              </div>
+
+              <input type="submit" class="form-calc__btn right" name="name" value="Заказать">
+
+            </div>
+
+            <h4 class="form-calc__description">Возникли вопросы? <a href="#" class="form-calc__link js-show-modal">Звоните!</a></h4>
+          </form>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer-box footer-box_center">
+              <h6 class="footer__title">карта сайта</h6>
+              <ul class="footer-list">
+                <li><a href="index.html">О компании</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Tехника</a></li>
+                <li><a href="documentation.html">Документация</a></li>
+                <li><a href="#">Нам доверяют</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Вывоз бытового мусора (тко)</a></li>
+                <li><a href="#">Крупногабаритный мусор (кгм)  </a></li>
+                <li><a href="#">Вывоз строительного мусора</a></li>
+                <li><a href="#">Контейнеры для тко и кгм</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-box footer-box_left">
+              <h6 class="footer__title ">о нас</h6>
+              <div class="footer__logo" style="background-image: url(img/logo-footer.png);"></div>
+              <div class="footer__description">Вывоз мусора в Новосибирске и НСО</div>
+            </div>
+            <div class="footer-box footer-box_right">
+              <h6 class="footer__title">контакты</h6>
+              <div class="footer__contacts">
+                <p>630054, г.Новосибирск, Крашенинникова 3 пер., д.3, оф.305</p>
+              </div>
+              <div class="footer__contacts">
+                <p>диспетчер: +7 (383) 299-31-99 тел/факс: +7 (383) 355-99-24 e-mail: eco-fly@mail.ru</p>
+              </div>
+            </div>
+
+            <div class="copywrite">
+              <div class="copywrite__block">
+                <p>ООО ЭкоФлай © 2016</p>
+              </div>
+              <div class="copywrite__block">
+                <p>Программирование: InterLand</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </footer>
+
+    </div>
+    <!-- END content -->
+
+    <!-- BEGIN scripts -->
+
+    <!-- <script src="js/jquery-3.1.0.min.js"></script> -->
+    <script src="js/jquery.js"></script>
+
+    <!-- END scripts -->
+
+  </body>
+
+</html>

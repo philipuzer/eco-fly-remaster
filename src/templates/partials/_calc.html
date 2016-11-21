@@ -1,0 +1,90 @@
+<div class="calculate" style="background-image: url('{{calcBg}}');"id="calc">
+	<div class="container">
+		<form action="" class="form-calc">
+			<h4 class="form-calc__title">Калькулятор расчета
+			<span>стоимости вывоза мусора</span></h4>
+
+			<div class="select-title">
+				<p>Выберите тип вывозимого мусора</p>
+			</div>
+
+			<div class="select-box">
+				<select class="select select_garbadge" >
+					<option class="form__option" value=""> Вывоз бытового мусора ТКО </option>
+					<option class="form__option" value="">  Вывоз бытового мусора ТКО 2</option>
+					<option class="form__option" value="">  Вывоз бытового мусора ТКО 3</option>
+					<option class="form__option" value=""> Вывоз бытового мусора ТКО 4</option>
+
+				</select>
+				<a href="" class="select-button"></a>
+			</div>
+			<div class="select-title">
+				<p>Выберите тип услуги</p>
+			</div>
+			<div class="select-box">
+				<select class="select" >
+					<option class="form__option" value="">Вывозим мусор однократно </option>
+					<option class="form__option" value="">Вывозим мусор многократно</option>
+					<option class="form__option" value="">Вывозим мусор однократно</option>
+					<option class="form__option" value="">Вывозим мусор многократно</option>
+				</select>
+				<a href="" class="select-button"></a>
+			</div>
+			<div class="select-title">
+				<p>Выберите объем контейнера и количество</p>
+			</div>
+			<div class="form-calc__box">
+				<div class="form-calc__container left">
+					<div class="select-title select-title_small">
+						<p>Oбъем контейнера</p>
+					</div>
+					<div class="select-box select-box_small">
+						<select class="select select_ltl" >
+							<option class="form__option" value="">1.1 м3 </option>
+							<option class="form__option" value="">1.2 м3</option>
+							<option class="form__option" value="">1.2 м3</option>
+							<option class="form__option" value="">1.2 м3</option>
+						</select>
+						<a href="" class="select-button"></a>
+					</div>
+				</div>
+				<div class="form-calc__container right">
+					<div class="select-title select-title_small">
+						<p>количество контейнеров</p>
+					</div>
+					<div class="number-container js-number-container">
+						<button class="minus js-minus"> </button>
+						<input class="number-container__text js-number-container-value" type="text" value ="1">
+						<button class="plus js-plus"> </button>
+					</div>
+				</div>
+			</div>
+			<div class="select-title">
+				<p>Выберите район</p>
+			</div>
+			<div class="select-box">
+				<select class="select  select_region" >
+					<option class="form__option" value="">В черте города </option>
+					<option class="form__option" value="">район 1</option>
+					<option class="form__option" value="">район 2</option>
+					<option class="form__option" value="">За городом</option>
+				</select>
+					<a href="" class="select-button"></a>
+			</div>
+			<div class="form-calc__box">
+				<div class="select-title">
+					<p>Приблизительная стоимость</p>
+				</div>
+				<div class="price left">
+					<p class="price__value">2520</p>
+					руб в месяц
+				</div>
+
+				<input type="submit" class="form-calc__btn right" name="name" value="Заказать">
+
+			</div>
+
+			<h4 class="form-calc__description">Возникли вопросы? <a href="#" class="form-calc__link js-show-modal">Звоните!</a></h4>
+		</form>
+	</div>
+</div>
